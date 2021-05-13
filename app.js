@@ -99,7 +99,7 @@ app.delete('/persons/:id', function (req, res) {
 })
 
 
-app.get('/*', (req, res) => {
+app.get('*', (req, res) => {
     res.json({message: "Page not found"})
 })
 
