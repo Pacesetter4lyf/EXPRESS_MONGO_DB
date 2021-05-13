@@ -2,7 +2,7 @@
 const express = require('express')
 let mongoose = require('mongoose');
 const app = express()
-const port = 3000
+let port = process.env.PORT || 8080;
 
 const uri = "mongodb+srv://megs:megs@cluster0.r46wh.mongodb.net/Zuri_database?retryWrites=true&w=majority";
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
