@@ -10,3 +10,6 @@ app.put('/persons/:id'): This route is used to edit a single document whose ID i
 app.delete('/persons/:id'): This route deletes a single document from the collection. 
 
 app.get('*'): this is the default route that shows an error page when all other route are not hit
+
+
+https://morning-island-69253.herokuapp.com/persons

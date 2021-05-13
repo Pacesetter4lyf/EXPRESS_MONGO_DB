@@ -4,7 +4,7 @@ let mongoose = require('mongoose');
 const app = express()
 let port = process.env.PORT || 8080;
 
-const uri = "mongodb+srv://megs:megs@cluster0.r46wh.mongodb.net/Zuri_database?retryWrites=true&w=majority";
+const uri = process.env.MONGODB_URI || "mongodb+srv://megs:megs@cluster0.r46wh.mongodb.net/Zuri_database?retryWrites=true&w=majority";
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
 .then(() => {
     console.log('Database connection successful')
