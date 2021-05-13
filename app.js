@@ -13,6 +13,8 @@ mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
     console.error('Database connection error')
 })
 
+
+
 let basicSchema = new mongoose.Schema({
     email: String,
     firstName: String, 
