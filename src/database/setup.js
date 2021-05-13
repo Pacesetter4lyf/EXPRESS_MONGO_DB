@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const uri = process.env.MONGODB_URI || "mongodb+srv://megs:megs@cluster0.r46wh.mongodb.net/Zuri_database?retryWrites=true&w=majority";
+const uri = process.env.MONGODB_URI ;
 
 
 module.exports = function(){
